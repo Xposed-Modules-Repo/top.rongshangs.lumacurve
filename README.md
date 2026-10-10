@@ -13,6 +13,27 @@ A brightness customization module for HyperOS 4, powered by Root and LSPosed. Cu
 - 主屏手动亮度磁贴、平滑过渡与变化确认。
 - 更新支持忽略版本、官网与 GitHub 下载；日志页可导出故障分析包。
 
+## 界面预览 / Screenshots
+
+<table>
+  <tr>
+    <th>状态页</th>
+    <th>场景判定与控制</th>
+    <th>户外高亮</th>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/3.0.0/status.jpg" alt="HyperLux 3.0.0 状态页：光感、场景、曲线与输出保护" width="260"></td>
+    <td><img src="docs/screenshots/3.0.0/scene-controls.jpg" alt="HyperLux 3.0.0 场景判定与控制设置" width="260"></td>
+    <td><img src="docs/screenshots/3.0.0/outdoor-brightness.jpg" alt="HyperLux 3.0.0 户外高亮设置" width="260"></td>
+  </tr>
+</table>
+
+### 用户强光效果示例
+
+用户提供的强光手电演示，仅展示特定设备与设置下的效果，不代表日常亮度或所有机型的亮度上限。实际输出取决于本机映射、配置和系统保护。
+
+<p><img src="docs/screenshots/3.0.0/user-strong-light-demo.jpg" alt="用户提供的强光手电演示，实际亮度因设备和设置而异" width="640"></p>
+
 ## 安装 / Installation
 
 需要 **HyperOS 4、Root、LSPosed**，最低 Android 14。安装 APK，在 LSPosed 启用 HyperLux，作用域选择 **系统框架 / Android 系统（android）**，重启后进入 APP 授予 Root。后续修改曲线及参数无需重启；更新模块后重启加载新版钩子。旧亮度模块请先停用或卸载，避免同时控制。
