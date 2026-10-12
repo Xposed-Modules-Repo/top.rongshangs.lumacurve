@@ -4,6 +4,15 @@
 
 A brightness customization module for HyperOS 4, powered by Root and LSPosed. Customize the base brightness curve, remember manual preferences, and configure existing system scenes while retaining system transitions and protection.
 
+## 3.0.1 正式版 / Release
+
+- 户外高亮可直接填写 nit 上限，0 表示不限制；增强幅度与最高亮度分别调整。
+- 新增隐藏桌面图标，保留 LSPosed 设置入口，可随时恢复。
+- 首次设置提供用户需知；修复切换桌面图标后重复确认的问题。
+- 修复部分红米机型（K90PM / K80PM）唤醒、解锁时偶发卡死及系统重启的问题。
+
+Outdoor boost supports a separate ceiling in nit. The launcher icon can be hidden while retaining LSPosed settings access. The first-settings notice now preserves acknowledgement across entry points. Intermittent wake/unlock freezes and system restarts reported on affected Redmi devices have been fixed.
+
 ## 功能 / Features
 
 - 可编辑基础曲线、命名预设与手动偏好记忆。
@@ -40,11 +49,11 @@ A brightness customization module for HyperOS 4, powered by Root and LSPosed. Cu
 
 Requires **HyperOS 4, Root and LSPosed**, with Android 14 or newer. Install the APK, enable HyperLux for **System Framework / Android System (android)** in LSPosed, reboot, and grant Root to the app. Reboot after module updates; ordinary curve and parameter edits do not require a reboot. Disable or uninstall other brightness modules first.
 
-## 已知问题 / Known issues
+## 兼容性与反馈 / Compatibility and feedback
 
-K90PM / K80PM 偶发解锁卡死的根因仍在排查，尚不能保证 3.0.0 已解决。主机回归与固件接口核对不等于完成所有机型实测。发生问题请在恢复使用后尽快导出分析包，并附机型、系统版本、模块版本及故障时间；分析包可能包含设备信息，建议私下提供给作者。
+已修复部分红米机型（K90PM / K80PM）偶发唤醒、解锁卡死的问题。修复完成的结论依据后续用户测试反馈。其他异常请在恢复使用后从日志页导出分析包，并附机型、系统版本、模块版本及故障时间；分析包可能包含设备信息，建议私下提供给作者。
 
-Intermittent wake/unlock freezes reported on K90PM / K80PM remain under investigation. Version 3.0.0 is not a confirmed fix. Host tests and firmware interface checks do not establish compatibility with every device.
+The Redmi wake/unlock freeze fix is recorded based on follow-up user testing. For other issues, export an analysis package from the log page and report your device model, system/module versions and the time of the issue. Host and firmware checks do not replace testing every device.
 
 ## 源码、反馈与许可 / Source, support and license
 
