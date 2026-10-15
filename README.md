@@ -4,14 +4,14 @@
 
 A brightness customization module for HyperOS 4, powered by Root and LSPosed. Customize the base brightness curve, remember manual preferences, and configure existing system scenes while retaining system transitions and protection.
 
-## 3.0.1 正式版 / Release
+## 3.0.2 正式版 / Release
 
-- 户外高亮可直接填写 nit 上限，0 表示不限制；增强幅度与最高亮度分别调整。
-- 新增隐藏桌面图标，保留 LSPosed 设置入口，可随时恢复。
-- 首次设置提供用户需知；修复切换桌面图标后重复确认的问题。
-- 修复部分红米机型（K90PM / K80PM）唤醒、解锁时偶发卡死及系统重启的问题。
+- 绿色手动记忆曲线可保存为基础曲线，支持恢复设备原始曲线。
+- 暗光锁定支持手动调整后以新亮度继续稳定，达到阈值恢复自动亮度。
+- 新增应用自动亮度名单，前台暂停、退出恢复；复用系统事件，无新增常驻进程或轮询。
+- 扩展新旧户外画面限亮接口兼容，修复前台查询竞态和息屏订阅。
 
-Outdoor boost supports a separate ceiling in nit. The launcher icon can be hidden while retaining LSPosed settings access. The first-settings notice now preserves acknowledgement across entry points. Intermittent wake/unlock freezes and system restarts reported on affected Redmi devices have been fixed.
+Save the learned curve as your baseline, choose how dark locking handles manual adjustments, and pause automatic brightness in selected foreground apps. Compatibility paths are mutually exclusive; foreground query races and screen-off subscriptions have been fixed.
 
 ## 功能 / Features
 
@@ -63,9 +63,9 @@ This repository distributes the LSPosed module. Full corresponding source is mai
 
 - [官网与下载 / Website](https://lc.rongshangs.top)
 - [完整源码 / Source code](https://github.com/RongShangs/LumaCurve)
-- [3.0.0 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v3.0.0/LumaCurve-3.0.0-source.zip)
-- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v3.0.0/docs/releases/3.0.0.md)
+- [3.0.2 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v3.0.2/LumaCurve-3.0.2-source.zip)
+- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v3.0.2/docs/releases/3.0.2.md)
 - [问题反馈 / Issues](https://github.com/RongShangs/LumaCurve/issues)
-- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v3.0.0/LICENSE)
+- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v3.0.2/LICENSE)
 
 作者 / Author：戎Shang（RongShangs）。个人开源项目，与小米、红米及 HyperOS 官方无关联。
