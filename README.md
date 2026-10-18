@@ -1,17 +1,22 @@
 # HyperLux
 
-适配 HyperOS 4 的亮度自定义工具。基于 Root 与 LSPosed，在系统亮度链路内调整曲线、手动偏好记忆及现有场景控制，保留系统过渡动画与必要保护。
+兼容 HyperOS 的亮度自定义工具。基于 Root 与 LSPosed，在系统亮度链路内调整曲线、手动偏好记忆及现有场景控制，保留系统过渡动画与必要保护。
 
-A brightness customization module for HyperOS 4, powered by Root and LSPosed. Customize the base brightness curve, remember manual preferences, and configure existing system scenes while retaining system transitions and protection.
+A brightness customization module for HyperOS, powered by Root and LSPosed. Customize the base brightness curve, remember manual preferences, and configure existing system scenes while retaining system transitions and protection.
 
-## 3.1.1 正式版 / Release
+## 4.0.0 正式版 / Release
 
-- 名单应用仍在主屏可见时，小窗与分屏切换焦点继续暂停自动亮度；全部不可见后恢复。
-- 修复多名单应用及首次异步查询期间的主动自动亮度优先权。
-- 异步有界窗口查询，事件合并、超时恢复，无新增轮询或常驻进程。
-- 完整复审监听锁范围、查询竞态、主副屏隔离，保留曲线、记忆及户外设置。
+相较上一个公开版本 3.1.1 的累计更新：
 
-Selected apps keep automatic brightness paused while visible in floating windows or split screen. Manual auto-brightness choices are respected across multiple visible apps and in-flight queries. Bounded asynchronous visibility reads avoid blocking the display thread; there is no polling or additional resident process.
+- 新增部分机型 HyperOS 3、部分移植系统的支持，功能按本机实际接口独立检测。
+- 完善移植系统辅助光感接入，修复已确认的蓝色基础曲线重建回退；保留原适配和用户设置。
+- 扩展传统场景、HBM 与户外目标路径；功能自检改独立页面，可展开当前与备用兼容路线。
+- 统一“保持记忆”，新增跨自动亮度开关和永久保持，旧有选择继续保留。
+- 主屏手动面板新增临时常亮；更新弹窗仅关于页显示。
+- 新增欢迎及五页核心教程，设置内可从欢迎页重看；移除旧设置须知与倒计时。
+- 完善安装失败回滚、可选功能隔离和统一兼容维护；控制中心节点映射入口暂时隐藏。
+
+Adds compatibility paths for selected HyperOS 3 devices and ported systems, improved auxiliary sensor integration and base-curve retention, per-feature compatibility reports, persistent preference options, temporary screen-on control and onboarding. Existing compatibility paths and saved settings are retained. Features depend on actual device interfaces; this does not claim every ROM or device has been tested. Legacy Xposed API 82 remains in use; reboot after updating.
 
 ## 功能 / Features
 
@@ -45,9 +50,9 @@ Selected apps keep automatic brightness paused while visible in floating windows
 
 ## 安装 / Installation
 
-需要 **HyperOS 4、Root、LSPosed**，最低 Android 14。安装 APK，在 LSPosed 启用 HyperLux，作用域选择 **系统框架 / Android 系统（android）**，重启后进入 APP 授予 Root。后续修改曲线及参数无需重启；更新模块后重启加载新版钩子。旧亮度模块请先停用或卸载，避免同时控制。
+需要 **HyperOS、Root、LSPosed**，最低 Android 14。安装 APK，在 LSPosed 启用 HyperLux，作用域选择 **系统框架 / Android 系统（android）**，重启后进入 APP 授予 Root。后续修改曲线及参数无需重启；更新模块后重启加载新版钩子。旧亮度模块请先停用或卸载，避免同时控制。
 
-Requires **HyperOS 4, Root and LSPosed**, with Android 14 or newer. Install the APK, enable HyperLux for **System Framework / Android System (android)** in LSPosed, reboot, and grant Root to the app. Reboot after module updates; ordinary curve and parameter edits do not require a reboot. Disable or uninstall other brightness modules first.
+Requires **HyperOS, Root and LSPosed**, with Android 14 or newer. Install the APK, enable HyperLux for **System Framework / Android System (android)** in LSPosed, reboot, and grant Root to the app. Reboot after module updates; ordinary curve and parameter edits do not require a reboot. Disable or uninstall other brightness modules first.
 
 ## 兼容性与反馈 / Compatibility and feedback
 
@@ -63,9 +68,9 @@ This repository distributes the LSPosed module. Full corresponding source is mai
 
 - [官网与下载 / Website](https://lc.rongshangs.top)
 - [完整源码 / Source code](https://github.com/RongShangs/LumaCurve)
-- [3.1.1 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v3.1.1/LumaCurve-3.1.1-source.zip)
-- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v3.1.1/docs/releases/3.1.1.md)
+- [4.0.0 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v4.0.0/LumaCurve-4.0.0-source.zip)
+- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v4.0.0/docs/releases/3.1.1.md)
 - [问题反馈 / Issues](https://github.com/RongShangs/LumaCurve/issues)
-- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v3.1.1/LICENSE)
+- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v4.0.0/LICENSE)
 
 作者 / Author：戎Shang（RongShangs）。个人开源项目，与小米、红米及 HyperOS 官方无关联。
