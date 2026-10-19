@@ -4,19 +4,12 @@
 
 A brightness customization module for HyperOS, powered by Root and LSPosed. Customize the base brightness curve, remember manual preferences, and configure existing system scenes while retaining system transitions and protection.
 
-## 4.0.0 正式版 / Release
+## 4.0.1 正式版 / Release
 
-相较上一个公开版本 3.1.1 的累计更新：
+1. 默认关闭暗光锁定，已有设置不受影响。
+2. 新增小米 18 Fold 折叠屏适配，完善光感输入与屏幕切换兼容。
 
-- 新增部分机型 HyperOS 3、部分移植系统的支持，功能按本机实际接口独立检测。
-- 完善移植系统辅助光感接入，修复已确认的蓝色基础曲线重建回退；保留原适配和用户设置。
-- 扩展传统场景、HBM 与户外目标路径；功能自检改独立页面，可展开当前与备用兼容路线。
-- 统一“保持记忆”，新增跨自动亮度开关和永久保持，旧有选择继续保留。
-- 主屏手动面板新增临时常亮；更新弹窗仅关于页显示。
-- 新增欢迎及五页核心教程，设置内可从欢迎页重看；移除旧设置须知与倒计时。
-- 完善安装失败回滚、可选功能隔离和统一兼容维护；控制中心节点映射入口暂时隐藏。
-
-Adds compatibility paths for selected HyperOS 3 devices and ported systems, improved auxiliary sensor integration and base-curve retention, per-feature compatibility reports, persistent preference options, temporary screen-on control and onboarding. Existing compatibility paths and saved settings are retained. Features depend on actual device interfaces; this does not claim every ROM or device has been tested. Legacy Xposed API 82 remains in use; reboot after updating.
+Low-light locking is disabled in new configurations; existing preferences are retained. Adds Xiaomi 18 Fold compatibility for sensor input and display switching. Features depend on actual device interfaces; host and firmware checks do not replace device testing. Reboot after updating.
 
 ## 功能 / Features
 
@@ -68,9 +61,9 @@ This repository distributes the LSPosed module. Full corresponding source is mai
 
 - [官网与下载 / Website](https://lc.rongshangs.top)
 - [完整源码 / Source code](https://github.com/RongShangs/LumaCurve)
-- [4.0.0 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v4.0.0/LumaCurve-4.0.0-source.zip)
-- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v4.0.0/docs/releases/3.1.1.md)
+- [4.0.1 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v4.0.1/LumaCurve-4.0.1-source.zip)
+- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v4.0.1/docs/releases/4.0.1.md)
 - [问题反馈 / Issues](https://github.com/RongShangs/LumaCurve/issues)
-- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v4.0.0/LICENSE)
+- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v4.0.1/LICENSE)
 
 作者 / Author：戎Shang（RongShangs）。个人开源项目，与小米、红米及 HyperOS 官方无关联。
