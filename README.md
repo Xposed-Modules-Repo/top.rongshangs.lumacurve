@@ -4,12 +4,11 @@
 
 A brightness customization module for HyperOS, powered by Root and LSPosed. Customize the base brightness curve, remember manual preferences, and configure existing system scenes while retaining system transitions and protection.
 
-## 4.0.1 正式版 / Release
+## 4.0.2 正式版 / Release
 
-1. 默认关闭暗光锁定，已有设置不受影响。
-2. 新增小米 18 Fold 折叠屏适配，完善光感输入与屏幕切换兼容。
-
-Low-light locking is disabled in new configurations; existing preferences are retained. Adds Xiaomi 18 Fold compatibility for sensor input and display switching. Features depend on actual device interfaces; host and firmware checks do not replace device testing. Reboot after updating.
+1.完善对单光线传感器设备适配。
+2.新增传统亮度过渡兼容路线，可分别调整变亮、变暗倍率。
+3.暗光稳定新增“暗处保持”和“日落后锁定”选项，完善功能描述。
 
 ## 功能 / Features
 
@@ -61,9 +60,9 @@ This repository distributes the LSPosed module. Full corresponding source is mai
 
 - [官网与下载 / Website](https://lc.rongshangs.top)
 - [完整源码 / Source code](https://github.com/RongShangs/LumaCurve)
-- [4.0.1 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v4.0.1/LumaCurve-4.0.1-source.zip)
-- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v4.0.1/docs/releases/4.0.1.md)
+- [4.0.2 对应源码 ZIP / Corresponding source](https://github.com/RongShangs/LumaCurve/releases/download/v4.0.2/LumaCurve-4.0.2-source.zip)
+- [更新日志 / Changelog](https://github.com/RongShangs/LumaCurve/blob/v4.0.2/docs/releases/4.0.2.md)
 - [问题反馈 / Issues](https://github.com/RongShangs/LumaCurve/issues)
-- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v4.0.1/LICENSE)
+- [GPL-3.0](https://github.com/RongShangs/LumaCurve/blob/v4.0.2/LICENSE)
 
 作者 / Author：戎Shang（RongShangs）。个人开源项目，与小米、红米及 HyperOS 官方无关联。
