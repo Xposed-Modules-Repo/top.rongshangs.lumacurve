@@ -1,8 +1,8 @@
 # HyperLux
 
-兼容 HyperOS 的亮度个性化工具，基于 Root 与 LSPosed。可编辑基础曲线、记住手动偏好、控制暗光与户外表现，也可用控制中心按真实节点调节。官方版本开源免费，GPL-3.0。
+兼容 HyperOS 的亮度个性化工具，基于 Root 与 LSPosed。编辑基础曲线、学习手动偏好、暗光稳定与户外高亮，支持按本机真实节点调节。GPL-3.0，官方版本开源免费。
 
-## 4.3.1 正式版
+## 4.3.2 正式版
 
 1. 新增控制中心节点控制：亮度条可按设备真实节点调节，支持完整控制、分区增强和自定义增强上限。
 2. 新增深色模式独立亮度曲线，可分别调整深浅色模式的亮度。
@@ -14,20 +14,24 @@
 8. 手动记忆按当前主题展示，支持分别保存为基础曲线和清除记忆。
 9. 基础曲线最右端节点支持向下调整，深色模式同样适用。
 10. 改善节点调节时的亮度显示，修复部分设备状态页一直显示 0 的问题。
+11. 修复分区节点控制二次上滑可能卡在普通亮度区间顶部的问题。
+12. 改善控制中心节点控制的稳定性，修复退出增强区间后可能再次失效的问题。
+13. 控制中心映射新增系统界面作用域检查、添加提示及“重启系统界面”按钮。
+14. 完善分析包记录，保留节点控制程序上次运行日志，便于排查间歇性问题。
 
-[累计完整更新日志](https://github.com/RongShangs/LumaCurve/blob/v4.3.1/docs/releases/4.3.1.md)
+[累计完整更新日志](https://github.com/RongShangs/LumaCurve/blob/v4.3.2/docs/releases/4.3.2.md)
 
 ## 安装与使用
 
-需要Root、LSPosed和兼容的HyperOS亮度接口，最低Android14。安装后启用模块，作用域选择“系统框架 / Android 系统”；控制中心节点控制另需“系统界面”。安装或覆盖更新后重启，再打开APP授予所需权限，日常保存参数无需重启。其他同时控制亮度的模块请先停用。
+最低Android14，需要Root、LSPosed及兼容的HyperOS亮度接口。安装后启用模块，勾选系统框架 / Android系统；控制中心节点控制另需系统界面。安装或覆盖更新后重启手机，再进入APP授予权限。作用域变更可在主屏手动亮度页确认后重启系统界面，日常保存参数无需重启。其他同时控制亮度的模块请先停用。
 
-功能按实际设备接口分别检测，部分平板及移植系统已有兼容案例，不保证每台设备支持全部功能。接口暂缺不重置保存设置。遇到BUG或不兼容请从日志页导出分析包反馈。
+功能按实际接口分别检测，部分平板和移植系统已有兼容案例。接口或权限暂缺不重置原设置，遇到BUG或不兼容请从日志页导出分析包反馈。
 
 ## 下载与源码
 
 - [官网与下载](https://lc.rongshangs.top)
-- [完整发布](https://github.com/RongShangs/LumaCurve/releases/tag/v4.3.1)
-- [对应源码](https://github.com/RongShangs/LumaCurve/releases/download/v4.3.1/LumaCurve-4.3.1-source.zip)
+- [完整发布](https://github.com/RongShangs/LumaCurve/releases/tag/v4.3.2)
+- [对应源码](https://github.com/RongShangs/LumaCurve/releases/download/v4.3.2/LumaCurve-4.3.2-source.zip)
 - [GitHub Issues](https://github.com/RongShangs/LumaCurve/issues)
 
-本项目与小米、红米和HyperOS官方无关联，GPL-3.0开源。
+本项目与小米、红米及HyperOS官方无关联。
