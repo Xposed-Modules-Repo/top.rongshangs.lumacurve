@@ -2,7 +2,7 @@
 
 兼容 HyperOS 的亮度个性化工具，基于 Root 与 LSPosed。编辑基础曲线、学习手动偏好、暗光稳定与户外高亮，支持按本机真实节点调节。GPL-3.0，官方版本开源免费。
 
-## 4.3.2 正式版
+## 4.3.3 正式版
 
 1. 新增控制中心节点控制：亮度条可按设备真实节点调节，支持完整控制、分区增强和自定义增强上限。
 2. 新增深色模式独立亮度曲线，可分别调整深浅色模式的亮度。
@@ -19,7 +19,14 @@
 13. 控制中心映射新增系统界面作用域检查、添加提示及“重启系统界面”按钮。
 14. 完善分析包记录，保留节点控制程序上次运行日志，便于排查间歇性问题。
 
-[累计完整更新日志](https://github.com/RongShangs/LumaCurve/blob/v4.3.2/docs/releases/4.3.2.md)
+主屏手动亮度页面：
+
+1. 作用域无法确认时，直接弹窗提醒添加“系统界面”。
+2. 节点保持不再因 HDR 退出，保留系统图像处理。
+3. 磁贴新增独立最高节点设置。
+4. 页面顶部新增红底烧屏、极端亮度偏色提示。
+
+[累计完整更新日志](https://github.com/RongShangs/LumaCurve/blob/v4.3.3/docs/releases/4.3.3.md)
 
 ## 安装与使用
 
@@ -30,8 +37,8 @@
 ## 下载与源码
 
 - [官网与下载](https://lc.rongshangs.top)
-- [完整发布](https://github.com/RongShangs/LumaCurve/releases/tag/v4.3.2)
-- [对应源码](https://github.com/RongShangs/LumaCurve/releases/download/v4.3.2/LumaCurve-4.3.2-source.zip)
+- [完整发布](https://github.com/RongShangs/LumaCurve/releases/tag/v4.3.3)
+- [对应源码](https://github.com/RongShangs/LumaCurve/releases/download/v4.3.3/LumaCurve-4.3.3-source.zip)
 - [GitHub Issues](https://github.com/RongShangs/LumaCurve/issues)
 
 本项目与小米、红米及HyperOS官方无关联。
