@@ -2,24 +2,15 @@
 
 兼容 HyperOS 的亮度个性化工具，基于 Root 与 LSPosed。编辑基础曲线、学习手动偏好、暗光稳定与户外高亮，支持按本机真实节点调节。GPL-3.0，官方版本开源免费。
 
-## 4.4.2 正式版
+## 4.4.3 正式版
 
-1. 结合实际功能加载状态检查作用域，兼容部分分支的字段差异，减少误提示。
-2. 节点映射的开机恢复增加就绪触发和实际加载回执确认。
-3. 锁屏时完整、分区映射均退回原生亮度条，解锁后恢复映射。
+1. 新增对Redmi K50电竞版部分HyperOS移植包的亮度曲线支持，修复配置无法保存的问题。
+2. 扩展部分系统固件的曲线适配，改善接口差异导致无法启用的问题。
+3. 修复部分设备当前亮度不显示的问题，缺少nit换算时显示实际节点或亮度比例。
+4. 完善户外增强与单项功能自检，减少可选接口异常对其他功能的影响。
+5. 保留已有设置和兼容路线，完善项目需求与兼容维护规范。
 
-## 4.4.0—4.4.1 累计简略更新
-1. 新增应用亮度隔离：应用内临时调亮或调暗，退出后恢复系统调节，控制中心主动调整仍按原有设置处理。
-2. 扩大基础曲线可调整范围，按设备实际亮度上下限编辑；节点统一按 0—100% 显示和输入。
-3. 修复分区亮度条普通区间调亮受限、绿色记忆曲线提前到顶，以及松手后滑块位置回落的问题。
-4. 修复进入场景设置时误弹作用域提醒，保留已有设置和兼容路线。
-5. 修复更新弹窗底部按钮遮挡，改善短屏、横屏和大字体下的显示。
-6. 完善控制中心映射的开机恢复，减少重启后需打开应用或重新开关的情况。
-7. 统一曲线百分比标尺，以本机普通手动亮度上限作为100%，改善不同设备的显示一致性。
-8. 减少无关操作时的作用域提醒，完善启动恢复和兼容状态说明。
-9. 修复记忆存档异常时当前手动记忆可能显示不完整的问题，保留已有设置和兼容路线。
-
-[累计完整更新日志](https://github.com/RongShangs/LumaCurve/blob/v4.4.2/docs/releases/4.4.2.md)
+[累计完整更新日志](https://github.com/RongShangs/LumaCurve/blob/v4.4.3/docs/releases/4.4.3.md)
 
 ## 安装与使用
 
@@ -30,8 +21,8 @@
 ## 下载与源码
 
 - [官网与下载](https://lc.rongshangs.top)
-- [完整发布](https://github.com/RongShangs/LumaCurve/releases/tag/v4.4.2)
-- [对应源码](https://github.com/RongShangs/LumaCurve/releases/download/v4.4.2/LumaCurve-4.4.2-source.zip)
+- [完整发布](https://github.com/RongShangs/LumaCurve/releases/tag/v4.4.3)
+- [对应源码](https://github.com/RongShangs/LumaCurve/releases/download/v4.4.3/LumaCurve-4.4.3-source.zip)
 - [GitHub Issues](https://github.com/RongShangs/LumaCurve/issues)
 
 本项目与小米、红米及HyperOS官方无关联。
